@@ -1,2 +1,8 @@
 # ✈️ Air Seoul
 팀원들과의 공통 관심사를 바탕으로 에어서울을 선정하여 사용자 경험을 개선하여 리뉴얼했습니다.
+
+## 🛠️ 기술스택
+- JavaScript
+- jQuery
+- Scss
+- Swiper
