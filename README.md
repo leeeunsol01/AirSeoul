@@ -28,3 +28,10 @@
 @media all and (min-width: 769px) and (max-width: 1024px) {...}
 @media all and (min-width: 1025px) {...}
 ```
+
+### 2. 빠른 에약 기능
+- isOneWay 상태값을 기준으로 편도/왕복 UI 분기 설계
+- 날짜 선택 값을 startTd, endTd로 관리하여 선택 범위 시각화
+- 선택된 예약 정보를 객체로 수집 후 키 값으로 직렬화하여 예약 식별자 생성
+- JSON 항공권 가격 데이터를 날짜 기준으로 매칭하여 합산 처리
+- 예약 완료 시 모달을 통해 결과 화면을 동적으로 렌더링
