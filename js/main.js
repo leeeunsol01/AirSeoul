@@ -181,7 +181,6 @@ document.addEventListener('DOMContentLoaded', async () =>{
         });
     }
     
-    const daysInput = document.querySelector('.days_input');
     const calenderBox = document.querySelector('.calender_box');
     const calenderClose = calenderBox.querySelector('.close_img');
     const calenderBtn = document.querySelector('.calender_btn');
