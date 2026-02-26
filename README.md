@@ -153,3 +153,23 @@ bar.onclick = () => {
 };
 ```
 
+#### 🔧 트러블슈팅: 최저가 항공권 그래프 색상
+#### 개선 전
+여러 나라(예: 오사카, 다낭, 후쿠오카, 괌) 가격 그래프에서 최저가를 강조하려고 했지만, 실제로는 전체 그래프 중 단 하나의 최저가만 색상이 적용되어 혼동이 발생
+각 나라별 최저가를 직관적으로 구분하기 어려움
+
+#### 개선 후
+각 나라별 최저가 그래프를 시각적으로 구분하기 위해, 가격 배열(prices)에서 0보다 큰 값 중 최저가를 구하고, 해당 그래프의 색상을 변경
+```javascript
+const minPrice = Math.min(...prices.filter(p => p > 0));
+lis.forEach((li, index) => {
+    const item = currentPriceArray[index];
+    const bar = li.querySelector('.graph');
+    const price = Number(item.price);
+    bar.style.backgroundColor = (price === minPrice) ? '#FF6565' : '';
+    ...
+}
+```
+
+### ✨ 프로젝트를 통해
+만들어본 사이트들 중 기능적으로 가장 어려웠고, 막히는 부분이 많아 검색과 AI를 활용하며 하나씩 해결해 나갔습니다. 이 프로젝트를 완전히 이해하지 못한 부분도 있어, 지금도 다시 공부하며 배우고 있습니다.
