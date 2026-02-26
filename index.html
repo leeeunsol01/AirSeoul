@@ -274,8 +274,6 @@
 
                     syncNumber(type, currentVal + 1);
                     updatePassengerText(container);
-
-                    if (getTotalCount(container) > 9) showAlert();
                 });
 
                 $(document).on('click', '.passenger .minus', function(e) {
@@ -1577,7 +1575,7 @@
             <p class="from_day_result"></p>
             <p class="to_day_result"></p>
         </div>
-        <p class="random_num">항공권 번호 : </p>
+        <p class="random_num"></p>
         <button class="reser_result_btn">확 인</button>
     </div>
     <!-- quick_reser01 -->
@@ -1609,7 +1607,7 @@
             <p>가는 날</p>
             <p class="from_day_result"></p>
         </div>
-        <p class="random_num">항공권 번호 : </p>
+        <p class="random_num"></p>
         <button class="reser_result_btn">확 인</button>
     </div>
     <!-- quick_reser02 -->

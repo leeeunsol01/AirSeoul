@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', async () =>{
 
     priceDate = data;
     
-
-
     $('.lang_select ul li').on('click', function() {
         const text = $(this).text();
     
@@ -43,10 +41,10 @@ document.addEventListener('DOMContentLoaded', async () =>{
 
     const metaLinks = document.querySelectorAll('.gnb_meta a');
     const sections = document.querySelectorAll('.gnb_bottom .menu');
-    const scrollContainer = document.querySelector('.mo_gnb'); // 스크롤 감지 대상
+    const scrollContainer = document.querySelector('.mo_gnb'); 
 
     function activateMetaOnScroll() {
-        const scrollY = scrollContainer.scrollTop; // mo_gnb 안 스크롤
+        const scrollY = scrollContainer.scrollTop; 
         const containerHeight = scrollContainer.clientHeight;
 
         let activeIndex = 0;
@@ -180,6 +178,7 @@ document.addEventListener('DOMContentLoaded', async () =>{
             fullReset();
         });
     }
+    // trip
     
     const calenderBox = document.querySelector('.calender_box');
     const calenderClose = calenderBox.querySelector('.close_img');
